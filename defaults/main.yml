@@ -1,0 +1,8 @@
+---
+wtd_collabora_online_docker_image: "collabora/code"
+
+wtd_collabora_online_name: "collabora-online"
+
+wtd_collabora_online_ports: "127.0.0.1:9980:9980"
+wtd_collabora_online_domains: ""
+wtd_collabora_online_capabilities: "MKNOD"

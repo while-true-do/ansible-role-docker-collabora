@@ -1,0 +1,17 @@
+---
+- name: "Get latest Docker image: {{ wtd_collabora_online_docker_image }}"
+  docker_image:
+    name: "{{ wtd_collabora_online_docker_image }}"
+
+- name: Start container
+  docker_container:
+    name: "{{ wtd_collabora_online_name }}"
+    image: "{{ wtd_collabora_online_docker_image }}"
+    state: started
+    ports:
+      - "{{ wtd_collabora_online_ports }}"
+    env:
+      domain: "{{ wtd_collabora_online_domains }}"
+    capabilities:
+      - "{{ wtd_collabora_online_capabilities }}" 
+
