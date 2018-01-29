@@ -25,18 +25,18 @@ git clone https://github.com/while-true-do/ansible-role-docker-collabora.git whi
 
 **Used Modules**
 
--   [docker_image](http://docs.ansible.com/ansible/latest/docker_image.html)
--   [docker_container](http://docs.ansible.com/ansible/latest/docker_container.html)
+-   [docker_container](http://docs.ansible.com/ansible/latest/docker_container_module.html)
 
 ## Role Variables
 ```yaml
-wtd_collabora_online_docker_image: "collabora/code"
+---
+wtd_docker_collabora_image: "collabora/code"
 
-wtd_collabora_online_name: "collabora-online"
+wtd_docker_collabora_name: "collabora-online"
 
-wtd_collabora_online_ports: "127.0.0.1:9980:9980"
-wtd_collabora_online_domains: ""
-
+wtd_docker_collabora_ports: "127.0.0.1:9980:9980"
+wtd_docker_collabora_domains: ""
+wtd_docker_collabora_capabilities: "MKNOD"
 ```
 
 ## Dependencies
@@ -56,7 +56,7 @@ Simple Example:
   roles:
     - { role: while-true-do.docker-collabora }
   vars:
-    wtd_collabora_online_domains: "nextcloud.example.com"
+    wtd_docker_collabora_domains: "collabora.example.com"
 ```
 
 ## Testing
