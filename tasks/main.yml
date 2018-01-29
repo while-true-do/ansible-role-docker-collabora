@@ -8,6 +8,7 @@
     name: "{{ wtd_docker_collabora_name }}"
     image: "{{ wtd_docker_collabora_image }}"
     state: started
+    restart_policy: always
     ports:
       - "{{ wtd_docker_collabora_ports }}"
     env:
