@@ -26,6 +26,7 @@ git clone https://github.com/while-true-do/ansible-role-docker-collabora.git whi
 **Used Modules**
 
 -   [docker_container](http://docs.ansible.com/ansible/latest/docker_container_module.html)
+-   [docker_image](http://docs.ansible.com/ansible/latest/docker_image_module.html)
 
 ## Role Variables
 ```yaml
