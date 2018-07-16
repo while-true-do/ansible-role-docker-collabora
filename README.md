@@ -9,16 +9,16 @@ This role is needed to get the Collabora Online server running as docker contain
 
 ## Installation
 
-Install from [Ansible Galaxy](https://galaxy.ansible.com/while_true_do.docker-collabora)
+Install from [Ansible Galaxy](https://galaxy.ansible.com/while_true_do.docker_collabora)
 
 ```
-ansible-galaxy install while_true_do.docker-collabora
+ansible-galaxy install while_true_do.docker_collabora
 ```
 
 Install from [Github](https://github.com/while-true-do/ansible-role-docker-collabora)
 
 ```
-git clone https://github.com/while-true-do/ansible-role-docker-collabora.git while_true_do.docker-collabora
+git clone https://github.com/while-true-do/ansible-role-docker-collabora.git while_true_do.docker_collabora
 ```
 
 ## Requirements
@@ -58,7 +58,7 @@ Simple Example:
 ```yaml
 - hosts: servers 
   roles:
-    - { role: while_true_do.docker-collabora }
+    - { role: while_true_do.docker_collabora }
   vars:
     wtd_docker_collabora_domains: "collabora.example.com"
 ```
