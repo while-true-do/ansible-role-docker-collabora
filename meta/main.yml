@@ -2,6 +2,7 @@ dependencies:
   - while_true_do.docker
 
 galaxy_info:
+  role_name: docker_collabora
   author: while-true-do.org
   description: A role that runs the Collabora Online server as container using docker.
   company: while-true-do.org
