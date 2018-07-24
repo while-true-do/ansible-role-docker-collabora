@@ -56,7 +56,7 @@ ansible-galaxy install -r requirements.yml
 Simple Example:
 
 ```yaml
-- hosts: servers 
+- hosts: servers
   roles:
     - { role: while_true_do.docker_collabora }
   vars:
