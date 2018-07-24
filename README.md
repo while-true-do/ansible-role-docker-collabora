@@ -33,6 +33,9 @@ git clone https://github.com/while-true-do/ansible-role-docker-collabora.git whi
 ---
 wtd_docker_collabora_image: "collabora/code"
 
+# keep the docker image updated
+wtd_docker_collabora_image_update: true
+
 wtd_docker_collabora_name: "collabora-online"
 
 wtd_docker_collabora_ports: "127.0.0.1:9980:9980"

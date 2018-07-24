@@ -2,6 +2,7 @@
 - name: "Get latest Docker image: {{ wtd_docker_collabora_image }}"
   docker_image:
     name: "{{ wtd_docker_collabora_image }}"
+    force: "{{ wtd_docker_collabora_image_update }}"
 
 - name: Start container
   docker_container:
