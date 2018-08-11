@@ -1,12 +1,12 @@
 dependencies:
-  - while-true-do.docker
+  - while_true_do.docker
 
 galaxy_info:
+  role_name: docker_collabora
   author: while-true-do.org
   description: A role that runs the Collabora Online server as container using docker.
   company: while-true-do.org
 
-  issue_tracker_url: https://github.com/while-true-do/ansible-role-docker-collabora/issues
   github_branch: master
   license: BSD
 
